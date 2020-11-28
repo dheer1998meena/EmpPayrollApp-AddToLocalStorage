@@ -38,9 +38,8 @@ class EmployeePayroll {
 
     get startDate() { return this._startDate; }
     set startDate(startDate) {
-        this._startDate = startDate;
+        this._startDate = startDate; 
     }
-
     // toString() method
     toString() {
         const options={year:'numeric',month:'numeric',day:'numeric'};
