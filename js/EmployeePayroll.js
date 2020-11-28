@@ -1,6 +1,6 @@
 class EmployeePayroll {
     
-    // getter and setter method.
+    // getter and setter method
     get id() { return this._id; }
     set id(id) {
         this._id = id;
@@ -8,9 +8,7 @@ class EmployeePayroll {
 
     get name() { return this._name; }
     set name(name) {
-        let nameRegex = RegExp("^[A-Z]{1}[a-zA-Z]{2,}$");
-        if (nameRegex.test(name)) this._name = name;
-        else throw "Incorect Name!!!";
+        this._name = name;
     }
 
     get profilePic() { return this._profilePic; }
@@ -43,7 +41,7 @@ class EmployeePayroll {
         this._startDate = startDate;
     }
 
-    // toString() method.
+    // toString() method
     toString() {
         const options={year:'numeric',month:'numeric',day:'numeric'};
         const empDate=this.startDate===undefined?"undefined":this.startDate.toLocaleDateString("en-US",options);
